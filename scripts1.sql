@@ -45,7 +45,7 @@ ENGINE = InnoDB;
 -- Table type_of_document
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS type_of_document (
-  id_type_of_document INT NOT NULL,
+  id_type_of_document INT NOT NULL AUTO_INCREMENT,
   name_document VARCHAR(45) NOT NULL,
   create_at DATE NOT NULL,
   update_at DATE NULL,
@@ -78,7 +78,7 @@ ENGINE = InnoDB;
 -- Table invoice
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS invoice (
-  id_invoice INT NOT NULL,
+  id_invoice INT NOT NULL AUTO_INCREMENT,
   seller_id_seller INT NOT NULL,
   customer_id_customer INT NOT NULL,
   date_invoice DATE NOT NULL,
