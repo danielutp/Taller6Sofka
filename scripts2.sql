@@ -229,7 +229,6 @@ value(6,1,3,"2022-01-02",null,null);
 insert into invoice(id_invoice,seller_id_seller,customer_id_customer,date_invoice,update_at,delete_at)
 value(7,1,3,"2022-01-02",null,null);
 
-select * from invoice;
 -- -----------------------------------------------------
 -- Datos de la table product_has_supplier
 -- -----------------------------------------------------

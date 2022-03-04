@@ -1,6 +1,5 @@
 CREATE SCHEMA IF NOT EXISTS store DEFAULT CHARACTER SET utf8;
 USE store;
-
 -- -----------------------------------------------------
 -- Table seller
 -- -----------------------------------------------------
