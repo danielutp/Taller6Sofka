@@ -117,8 +117,8 @@ CREATE TABLE IF NOT EXISTS product_has_invoice (
   CONSTRAINT fk_product_has_invoice_invoice1
     FOREIGN KEY (invoice_id_invoice)
     REFERENCES invoice (id_invoice)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
 ENGINE = InnoDB;
 
 -- -----------------------------------------------------
@@ -246,11 +246,7 @@ update invoice SET delete_at = "2022-01-02" WHERE id_invoice = 2;
 -- Borrados fisicos de ventas realizadas
 -- -----------------------------------------------------
 delete from product_has_invoice where invoice_id_invoice = 3;
-delete from invoice where id_invoice = 3;
-
 delete from product_has_invoice where invoice_id_invoice = 2;
-delete from invoice where id_invoice = 2;
-
 -- -----------------------------------------------------
 -- Cambio de nombre de producto
 -- -----------------------------------------------------
